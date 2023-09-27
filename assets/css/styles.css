@@ -203,6 +203,9 @@ img {
     z-index: -1;
 }
 /* Active link */
+.active-link {
+    color: var(--first-color);
+}
 
 /*=============== HOME ===============*/
 .home__container {
@@ -542,7 +545,7 @@ img {
 .footer__social-link {
     color: var(--white-color);
     font-size: 1.25rem;
-    transition: color .4s;
+    transition: color 0.4s;
 }
 
 .footer__social-link:hover {
@@ -556,11 +559,44 @@ img {
     text-align: center;
 }
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: hsl(23, 4%, 15%);
+}
 
+::-webkit-scrollbar-thumb {
+    width: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: hsl(23, 4%, 30%);
+}
+::-webkit-scrollbar-thumb:hover {
+    width: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: hsl(23, 4%, 40%);
+}
 /*=============== SCROLL UP ===============*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background: var(--gradient-color);
+    display: inline-flex;
+    color: var(--white-color);
+    font-size: 1.25rem;
+    padding: 6px;
+    border-radius: 0.25rem;
+    z-index: var(--z-tooltip);
+    transition: bottom 0.4s, transform 0.4s;
+}
 
+.scrollup:hover {
+    transform: translateY(-.5rem);
+}
 /* Show Scroll Up */
-
+.show-scroll {
+    bottom: .3rem;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
