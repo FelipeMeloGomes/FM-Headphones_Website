@@ -1,11 +1,11 @@
-/*=============== GOOGLE FONTS ===============*/
+/* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+/* VARIABLES CSS */
 :root {
     --header-height: 3.5rem;
 
-    /*========== Colors ==========*/
+    /* Colors */
     /*Color mode HSL(hue, saturation, lightness)*/
     --first-color: hsl(23, 100%, 50%);
     --gradient-color: linear-gradient(
@@ -18,7 +18,7 @@
     --body-color: hsl(23, 12%, 4%);
     --container-color: hsl(23, 4%, 10%);
 
-    /*========== Font and typography ==========*/
+    /* Font and typography */
     /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: "Poppins", sans-serif;
     --biggest-font-size: 10rem;
@@ -29,17 +29,17 @@
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
 
-    /*========== Font weight ==========*/
+    /* Font weight */
     --font-regular: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== z index ==========*/
+    /* z index */
     --z-tooltip: 10;
     --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
+/* Responsive typography */
 @media screen and (min-width: 1150px) {
     :root {
         --biggest-font-size: 25rem;
@@ -52,7 +52,7 @@
     }
 }
 
-/*=============== BASE ===============*/
+/* BASE */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -92,7 +92,7 @@ img {
     height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* REUSABLE CSS CLASSES */
 .container {
     max-width: 1120px;
     margin-inline: 1.5rem;
@@ -117,7 +117,7 @@ img {
     overflow: hidden; /* For animation ScrollReveal */
 }
 
-/*=============== HEADER & NAV ===============*/
+/* HEADER & NAV */
 .header {
     position: fixed;
     width: 100%;
@@ -207,7 +207,7 @@ img {
     color: var(--first-color);
 }
 
-/*=============== HOME ===============*/
+/* HOME */
 .home__container {
     position: relative;
     padding-block: 7rem 1rem;
@@ -306,7 +306,7 @@ img {
 .home__button {
     justify-self: center;
 }
-/*=============== BUTTON ===============*/
+/* BUTTON */
 .button {
     background: var(--gradient-color);
     padding: 0.75rem 1.5rem;
@@ -329,7 +329,7 @@ img {
 .button:hover {
     box-shadow: 0 12px 32px hsla(23, 100%, 50%, 0.12);
 }
-/*=============== ABOUT ===============*/
+/* ABOUT */
 .about__container {
     row-gap: 3.5rem;
 }
@@ -346,7 +346,7 @@ img {
     width: 280px;
     justify-self: center;
 }
-/*=============== FAVORITE ===============*/
+/* FAVORITE */
 .favorite__container {
     padding-top: 2rem;
 }
@@ -377,7 +377,7 @@ img {
     filter: blur(0);
     scale: 1;
 }
-/*=============== MODEL ===============*/
+/* MODEL */
 .model__container {
     padding-top: 2rem;
     row-gap: 2.5rem;
@@ -445,7 +445,7 @@ img {
 .model__button {
     justify-self: center;
 }
-/*=============== SPONSOR ===============*/
+/* SPONSOR */
 .sponsor__img {
     width: 100px;
     transition: transform 0.4s;
@@ -462,7 +462,7 @@ img {
     align-items: center;
     gap: 5rem 4rem;
 }
-/*=============== FOOTER ===============*/
+/* FOOTER */
 .footer {
     padding-block: 2rem;
     overflow: hidden;
@@ -558,7 +558,7 @@ img {
     font-size: var(--small-font-size);
     text-align: center;
 }
-/*=============== SCROLL BAR ===============*/
+/* SCROLL BAR */
 ::-webkit-scrollbar {
     width: 0.6rem;
     border-radius: 0.5rem;
@@ -575,7 +575,7 @@ img {
     border-radius: 0.5rem;
     background-color: hsl(23, 4%, 40%);
 }
-/*=============== SCROLL UP ===============*/
+/* SCROLL UP */
 .scrollup {
     position: fixed;
     right: 1rem;
@@ -597,7 +597,7 @@ img {
 .show-scroll {
     bottom: 0.3rem;
 }
-/*=============== BREAKPOINTS ===============*/
+/* BREAKPOINTS */
 /* For small devices */
 @media screen and (max-width: 340px) {
     .container {
